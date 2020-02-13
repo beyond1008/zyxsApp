@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#fa513a</color>
+    <color name="colorAccent">#fa513a</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!-- 主颜色-->
+    <color name="base_color">#fa513a</color>
+    <!-- 页面背景颜色 -->
+    <color name="background">#f8f8f8</color>
+    <!-- 分割线颜色 -->
+    <color name="line_split">#ebecee</color>
+    <!-- 内容文字颜色 -->
+    <color name="text_color_1">#333333</color>
+    <!-- 次要内容文字颜色 -->
+    <color name="text_color_2">#666666</color>
+    <!-- 次要内容文字颜色 -->
+    <color name="text_color_3">#999999</color>
+    <!-- 次要内容文字颜色 -->
+    <color name="text_color_4">#cccccc</color>
+
+</resources>

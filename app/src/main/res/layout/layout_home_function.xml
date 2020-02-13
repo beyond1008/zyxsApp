@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_home_function"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/background"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@color/base_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/view_line"
+            android:text="看帖"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/text_size_tiny" />
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_post_type"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:drawableEnd="@drawable/icon_more_down"
+            android:drawablePadding="5dp"
+            android:text="全部"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/text_size_tiny" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

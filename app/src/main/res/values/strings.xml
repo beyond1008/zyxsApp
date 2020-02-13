@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CentralPlainLion</string>
+    <string name="loading">加载中…</string>
+    <string name="data_reload">重新加载</string>
+    <string name="data_empty">暂无数据</string>
+    <!-- 通用模块 -->
+    <string name="back">返回</string>
+    <string name="confirm">确定</string>
+    <string name="submit">提交</string>
+    <string name="sure">确认</string>
+
+    <string name="common_loading">加载中…</string>
+    <!-- 提示 -->
+    <string name="hint_layout_no_data">暂无数据</string>
+    <string name="hint_layout_error_request">请求出错了</string>
+    <string name="hint_layout_error_network">没有网络了</string>
+
+    <!-- behavior -->
+    <string name="behavior_my_fab_scale">com.yaxon.centralplainlion.widget.ScaleDownShowBehavior</string>
+
+</resources>

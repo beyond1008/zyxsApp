@@ -1,0 +1,23 @@
+<resources>
+    <!-- 自定义标题栏 -->
+    <dimen name="common_title_height">48dp</dimen>
+    <dimen name="common_title_icon_height">48dp</dimen>
+    <dimen name="common_title_text_size">18sp</dimen>
+    <!-- 控件间的间距 -->
+    <dimen name="margin_none">0dp</dimen>
+    <dimen name="margin_divider">1dp</dimen>
+    <dimen name="margin_smallest">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">36dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+    <dimen name="big">15sp</dimen>
+    <!-- 标准字体字号定义 -->
+    <dimen name="text_size_smallest">11dp</dimen>
+    <dimen name="text_size_tiny">12dp</dimen>
+    <dimen name="text_size_normal">14dp</dimen>
+    <dimen name="text_size_big">16dp</dimen>
+    <dimen name="text_size_large">18dp</dimen>
+    <dimen name="text_size_xlarge">22dp</dimen>
+</resources>

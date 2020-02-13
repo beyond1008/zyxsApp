@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.yaxon.centralplainlion"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        resConfigs('zh-rCN',"en")   //只保留中文,英文和默认的资源
+        ndk { abiFilters "armeabi-v7a"}//设置支持的SO库架构 大幅影响apk体积 需要在模拟器上运行加上x86,正式发布去掉x86
+    }
+
+
+    signingConfigs {
+        centralplainlion{
+            keyAlias 'cardata'
+            keyPassword 'yaxoncardata'
+            storeFile file('/releasekey/cardata')
+            storePassword 'yaxoncardata'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.centralplainlion
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.centralplainlion
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.3'
+    //view注入
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+    //网络
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    //rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //日志
+    implementation 'com.orhanobut:logger:2.2.0'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor "com.github.bumptech.glide:compiler:4.8.0"
+    //事件总线
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //recyclerview 万能适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    //屏幕适配
+    implementation 'me.jessyan:autosize:1.1.2'
+    //指示器
+    implementation 'com.github.hackware1993:MagicIndicator:1.6.0'
+    //轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+    //下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    //aspectjrt
+    implementation 'org.aspectj:aspectjrt:1.8.13'
+}
